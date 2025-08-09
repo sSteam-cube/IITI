@@ -8,10 +8,11 @@ import pandas as pd
 import warnings
 warnings.filterwarnings("ignore", message=".*Casting complex values to real discards the imaginary part.*")
 #%%
-n = 500     # Number of oscillators
+
 K1 =0     # Coupling strength
 x0 = 0       # Lorentzian center
 m=6
+n = 500     # Number of oscillators
 t_fin=100    # Lorentzian width
 t_span = [0, t_fin]
 t_eval = np.linspace(*t_span, 200)
